@@ -1,16 +1,6 @@
 package main
 
 import (
-<<<<<<< HEAD
-	"fmt"
-	"net/http"
-)
-
-func main() {
-	fmt.Println("Server is running on port 3000")
-	http.ListenAndServe(":3000", nil)
-}
-=======
   "encoding/json"
   "fmt"
   "net/http"
@@ -29,4 +19,3 @@ func main() {
   fmt.Println("Server is running on port 3000")
   http.ListenAndServe(":3000", nil)
 }
->>>>>>> 77911b9 (implemented handler for /time)
