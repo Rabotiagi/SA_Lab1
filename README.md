@@ -1,4 +1,2 @@
 # SA_Lab1
-123
-qwe
-zxc
+Software architecture, laboratory work #1
