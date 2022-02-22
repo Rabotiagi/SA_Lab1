@@ -9,11 +9,13 @@ import (
 
 func main() {
 	http.HandleFunc("/time", func(w http.ResponseWriter, r *http.Request) {
-		currentTime := time.Now().UTC()
+		currentTime := time.Now().Format(time.RFC3339)
+		resp := make(map[string]string)
+		resp["time"] = currentTime
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(200)
-		_ = json.NewEncoder(w).Encode(currentTime.Format("2006-01-02T15:04:05Z07:00"))
+		_ = json.NewEncoder(w).Encode(resp)
 	})
 
 	fmt.Println("Server is running on port 8795")
