@@ -1,2 +1,2 @@
 # SA_Lab1
-Software Architecture, laboratory work #1
+Software architecture, laboratory work #1
