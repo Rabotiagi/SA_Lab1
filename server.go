@@ -16,6 +16,6 @@ func main() {
 		_ = json.NewEncoder(w).Encode(currentTime.Format("2006-01-02T15:04:05Z07:00"))
 	})
 
-	fmt.Println("Server is running on port 3000")
-	http.ListenAndServe(":3000", nil)
+	fmt.Println("Server is running on port 8795")
+	http.ListenAndServe(":8795", nil)
 }
